@@ -1,6 +1,6 @@
 # Introduction
 
-Microservice Application to accept the APIs and to store into the DB
+Microservice application to accept the APIs and to store into the DB
 
 # Build
 

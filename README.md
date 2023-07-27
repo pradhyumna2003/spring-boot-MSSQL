@@ -12,7 +12,7 @@ gradle build
 
 # Run Application 
 
-This is a microservice application ,the builded  jar file will be converted into the  image to run it on the dockers.
+This is a microservice application ,the built jar file will be converted into the  image to run it on the dockers.
 
 ```terminal
 

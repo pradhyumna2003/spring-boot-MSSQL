@@ -4,7 +4,7 @@ Microservice application to accept the APIs and to store into the DB
 
 # Build
 
-This is a Gradle based java Project .To build the project 
+This is a gradle based java project .To build the project. 
 
 ```terminal
 gradle build
@@ -12,7 +12,7 @@ gradle build
 
 # Run Application 
 
-This is a microservice application ,the built jar file will be converted into an image to run it in the dockers.
+This is a microservice application ,the built jar file will be converted into an image to run it in the docker.
 
 ```terminal
 

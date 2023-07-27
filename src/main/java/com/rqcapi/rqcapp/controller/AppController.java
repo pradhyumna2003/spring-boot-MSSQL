@@ -38,7 +38,7 @@ public class AppController {
             }
             if(flag==1){
                 logger.info("Valid Input");
-                Cylinder c=responseService.saveCylinder(new Cylinder(ts, cylinder.getTimeVal(), cylinder.getSerialNo(), cylinder.getCylinderType(), cylinder.getVldValue(), cylinder.getOldValue(), cylinder.getGrossWeight(), cylinder.getTareWeight(), cylinder.getVldResultFlag(), cylinder.getOldResultFlag(), cylinder.getGrossWeightResultFlag(), cylinder.getCarousel(), cylinder.getResultFlag(), cylinder.getStDueDate(),cylinder.getRemark()));
+                Cylinder c=responseService.saveCylinder(new Cylinder(ts, cylinder.getTimeVal(), cylinder.getSerialNo(), cylinder.getCylinderType(), cylinder.getVldValue(), cylinder.getOldValue(), cylinder.getGrossWeight(), cylinder.getTareWeight(), cylinder.getVldResultFlag(), cylinder.getOldResultFlag(), cylinder.getGrossWeightResultFlag(), cylinder.getCarousel(), cylinder.getResultFlag(), cylinder.getStDueDate(),cylinder.getRemark(),cylinder.getBungLeak(),cylinder.getBodyLeak(),cylinder.getNetWeight()));
                 logger.info("Saved to DataBase successfully");
                 return new ResponseEntity <>(c,HttpStatus.OK);
             }

@@ -27,33 +27,41 @@ public class Cylinder {
     private String serialNo;
     @Column(name="cylinderType", nullable = false)
     private Integer cylinderType;
-    @Column(name="vldValue", nullable = false)
+    @Column(name="vldValue", nullable = true)
     private Double vldValue  ;
-    @Column(name="oldValue", nullable = false)
+    @Column(name="oldValue", nullable = true)
     private Double oldValue;
     @Column(name="grossWeight", nullable = false)
     private Double grossWeight;
     @Column(name="tareWeight", nullable = false)
     private Double tareWeight;
-    @Column(name="vldResultFlag", nullable = false)
+    @Column(name="vldResultFlag", nullable = true)
     private Integer vldResultFlag;
-    @Column(name="oldResultFlag", nullable = false)
+    @Column(name="oldResultFlag", nullable = true)
     private Integer oldResultFlag;
-    @Column(name="grossWeightResultFlag", nullable = false)
+    @Column(name="grossWeightResultFlag", nullable = true)
     private Integer grossWeightResultFlag;
-    @Column(name="carousel", nullable = false)
+    @Column(name="carousel", nullable = true)
     private Integer carousel;
     @Column(name="resultFlag", nullable = false)
     private Integer resultFlag;
     @Column(name="stDueDate", nullable = false)
     private String stDueDate;
-    @Column(name="remark", nullable = false) 
+    @Column(name="remark", nullable = true) 
     private String remark; 
+
+    @Column(name="bungLeak", nullable = true) 
+    private Integer bungLeak; 
+    
+    @Column(name="bodyLeak", nullable = true) 
+    private Integer bodyLeak; 
+    @Column(name="netWeight", nullable = false) 
+    private Double netWeight; 
     
     public Cylinder(){
         
     }
-    public Cylinder(Timestamp ts,Double timeVal, String serialNo, Integer cylinderType, Double vldValue, Double oldValue, Double grossWeight, Double tareWeight, Integer vldResultFlag, Integer oldResultFlag, Integer grossWeightResultFlag, Integer carousel, Integer resultFlag, String stDueDate, String remark) {
+    public Cylinder(Timestamp ts,Double timeVal, String serialNo, Integer cylinderType, Double vldValue, Double oldValue, Double grossWeight, Double tareWeight, Integer vldResultFlag, Integer oldResultFlag, Integer grossWeightResultFlag, Integer carousel, Integer resultFlag, String stDueDate, String remark,Integer bungLeak,Integer bodyLeak,Double netWeight) {
         this.ts=ts;
         this.timeVal = timeVal;
         this.serialNo = serialNo;
@@ -68,7 +76,11 @@ public class Cylinder {
         this.carousel = carousel;
         this.resultFlag = resultFlag;
         this.stDueDate = stDueDate;
+
         this.remark = remark;
+        this.bungLeak=bungLeak;
+        this.bodyLeak=bodyLeak;
+        this.netWeight=netWeight;
     }
     public void setTimeVal(Double timeVal) {
         this.timeVal = timeVal;
@@ -184,6 +196,17 @@ public class Cylinder {
     public String getRemark() {
         return this.remark;
     }    
+    public Integer getBungLeak() {
+        return this.bungLeak;
+    }
+    public Integer getBodyLeak() {
+        return this.bodyLeak;
+    }
+    public Double getNetWeight() {
+        return this.netWeight;
+    }
+
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();

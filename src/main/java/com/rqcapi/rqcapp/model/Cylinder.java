@@ -7,19 +7,17 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 
-import java.sql.Time;
+
+
 import java.sql.Timestamp;
-import java.util.Date;
+
 
 
 @Entity
 @Table(name = "RQCCylinder")
 public class Cylinder {
-    // @Id
-    // @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT")
-    // private Date ts;
+   
 
     @Id 
     private Timestamp ts; 

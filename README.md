@@ -1,6 +1,6 @@
 # Introduction
 
-Microservice application to accept the APIs and to store into the DB
+Microservice application to accept the data via the APIs and to store it into the SQl Express Server.
 
 # Build
 

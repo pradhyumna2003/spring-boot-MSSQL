@@ -2,6 +2,16 @@
 
 Microservice application to accept the data via the APIs and to store it into the SQL Express Server.
 
+
+# Configure DB
+
+Set the TCP Port to 1433,Username to "sa" and password.
+
+# Change in application.properties file
+
+Set the correct username,password and url in application.properties file.
+
+
 # Build
 
 This is a gradle based java project .To build the project. 

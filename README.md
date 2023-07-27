@@ -59,7 +59,10 @@ POST:<ServerIP>:8090/cylinder/api
     "carousel":45,
     "resultFlag":3,
     "stDueDate":"ssfsf",
-    "remark":"xxx"
+    "remark":"xxx",
+    "bungLeak":9999,
+    "bodyLeak":867,
+    "netWeight":8.86
 }
 ```
 

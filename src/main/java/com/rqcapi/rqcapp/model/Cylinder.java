@@ -210,21 +210,24 @@ public class Cylinder {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Timestamp: ").append(ts).append("\n");
-        sb.append("Time Value: ").append(timeVal).append("\n");
-        sb.append("Serial Number: ").append(serialNo).append("\n");
-        sb.append("Cylinder Type: ").append(cylinderType).append("\n");
-        sb.append("VLD Value: ").append(vldValue).append("\n");
-        sb.append("Old Value: ").append(oldValue).append("\n");
-        sb.append("Gross Weight: ").append(grossWeight).append("\n");
-        sb.append("Tare Weight: ").append(tareWeight).append("\n");
-        sb.append("VLD Result Flag: ").append(vldResultFlag).append("\n");
-        sb.append("Old Result Flag: ").append(oldResultFlag).append("\n");
-        sb.append("Gross Weight Result Flag: ").append(grossWeightResultFlag).append("\n");
-        sb.append("Carousel: ").append(carousel).append("\n");
-        sb.append("Result Flag: ").append(resultFlag).append("\n");
-        sb.append("ST Due Date: ").append(stDueDate).append("\n");
-        sb.append("Remark: ").append(remark).append("\n");
+        sb.append("Timestamp: ").append(ts).append(" , ");
+        sb.append("Time Value: ").append(timeVal).append(" , ");
+        sb.append("Serial Number: ").append(serialNo).append(" , ");
+        sb.append("Cylinder Type: ").append(cylinderType).append(" , ");
+        sb.append("VLD Value: ").append(vldValue).append(" , ");
+        sb.append("Old Value: ").append(oldValue).append(" , ");
+        sb.append("Gross Weight: ").append(grossWeight).append(" , ");
+        sb.append("Tare Weight: ").append(tareWeight).append(" , ");
+        sb.append("VLD Result Flag: ").append(vldResultFlag).append(" , ");
+        sb.append("Old Result Flag: ").append(oldResultFlag).append(" , ");
+        sb.append("Gross Weight Result Flag: ").append(grossWeightResultFlag).append(" , ");
+        sb.append("Carousel: ").append(carousel).append(" , ");
+        sb.append("Result Flag: ").append(resultFlag).append(" , ");
+        sb.append("ST Due Date: ").append(stDueDate).append(" , ");
+        sb.append("Remark: ").append(remark).append(" , ");
+        sb.append("Bung Leak: ").append(bungLeak).append(" , ");
+        sb.append("Body Leak: ").append(bodyLeak).append(" , ");
+        sb.append("Net Weight: ").append(netWeight).append(" , ");
         return sb.toString();
     }
 }

@@ -53,15 +53,15 @@ POST:<ServerIP>:8090/cylinder/api
     "oldValue":73.99,
     "grossWeight":7.88,
     "tareWeight":9.833,
-    "vldResultFlag":2,
+    "vldResultFlag":0,
     "oldResultFlag":1,
-    "grossWeightResultFlag":5,
+    "grossWeightResultFlag":1,
     "carousel":45,
-    "resultFlag":3,
+    "resultFlag":0,
     "stDueDate":"ssfsf",
     "remark":"xxx",
-    "bungLeak":9999,
-    "bodyLeak":867,
+    "bungLeak":0,
+    "bodyLeak":0,
     "netWeight":8.86
 }
 ```

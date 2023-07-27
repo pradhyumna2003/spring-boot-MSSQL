@@ -28,15 +28,15 @@ public class AppController {
     public ResponseEntity<Cylinder> postRQC( @RequestBody Cylinder cylinder) {
         Logger logger=Logger.getLogger(this.getClass().getName());
         
-        int i=1;
+        int flag=1;
         LocalDateTime localDateTime = LocalDateTime.now();
         
         Timestamp ts=Timestamp.valueOf(localDateTime);
         try {
             if(cylinder.getSerialNo().equals("") ||cylinder.getStDueDate().equals("")||cylinder.getRemark().equals("") ){
-                i=0;
+                flag=0;
             }
-            if(i==1){
+            if(flag==1){
                 logger.info("Valid Input");
                 Cylinder c=responseService.saveCylinder(new Cylinder(ts, cylinder.getTimeVal(), cylinder.getSerialNo(), cylinder.getCylinderType(), cylinder.getVldValue(), cylinder.getOldValue(), cylinder.getGrossWeight(), cylinder.getTareWeight(), cylinder.getVldResultFlag(), cylinder.getOldResultFlag(), cylinder.getGrossWeightResultFlag(), cylinder.getCarousel(), cylinder.getResultFlag(), cylinder.getStDueDate(),cylinder.getRemark()));
                 logger.info("Saved to DataBase successfully");
@@ -49,8 +49,6 @@ public class AppController {
 			
             
 		} catch (Exception e) {
-            
-			
             return new ResponseEntity <>(null,HttpStatus.BAD_REQUEST);
 		}
     }

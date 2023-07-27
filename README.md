@@ -27,10 +27,10 @@ To run the image in docker.
 docker run -p <container_port>:8090 <image_name>
 
 ```
-# API input
+# API Input
 
 ```URL
-POST:localhost:8090/cylinder/cylinder/api
+POST:localhost:8090/cylinder/api
 ```
 ```JSON
 {

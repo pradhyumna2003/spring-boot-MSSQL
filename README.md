@@ -42,7 +42,7 @@ docker run -p <container_port>:8090 <image_name>
 # API Input
 
 ```URL
-POST:localhost:8090/cylinder/api
+POST:<ServerIP>:8090/cylinder/api
 ```
 ```JSON
 {

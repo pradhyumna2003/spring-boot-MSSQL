@@ -1,4 +1,4 @@
-package com.apisqlapp.apisql.model;
+package com.rqcapi.rqcapp.model;
 
 
 
@@ -15,7 +15,7 @@ import java.util.Date;
 
 
 @Entity
-@Table(name = "CylinderTestDemo")
+@Table(name = "RQCCylinder")
 public class Cylinder {
     // @Id
     // @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT")

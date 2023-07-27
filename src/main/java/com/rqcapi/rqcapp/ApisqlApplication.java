@@ -1,4 +1,4 @@
-package com.apisqlapp.apisql;
+package com.rqcapi.rqcapp;
 
 import java.util.TimeZone;
 

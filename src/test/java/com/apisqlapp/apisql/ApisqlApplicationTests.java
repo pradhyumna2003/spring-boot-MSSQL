@@ -1,5 +1,6 @@
 package com.apisqlapp.apisql;
 
+
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -7,7 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 class ApisqlApplicationTests {
 
 	@Test
-	void contextLoads() {
+	void contextLoads() {	
 	}
 
 }

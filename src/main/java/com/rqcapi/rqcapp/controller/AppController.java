@@ -1,4 +1,4 @@
-package com.apisqlapp.apisql.controller;
+package com.rqcapi.rqcapp.controller;
 
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
@@ -13,9 +13,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.apisqlapp.apisql.model.Cylinder;
-
-import com.apisqlapp.apisql.response.ResponseService;
+import com.rqcapi.rqcapp.model.Cylinder;
+import com.rqcapi.rqcapp.response.ResponseService;
 
 
 @RestController
@@ -25,8 +24,8 @@ public class AppController {
 	ResponseService responseService;
     
 
-    @PostMapping(value = "/cylinder/api")
-    public ResponseEntity<Cylinder> postMethodName ( @RequestBody Cylinder cylinder) {
+    @PostMapping(value = "/api")
+    public ResponseEntity<Cylinder> postRQC( @RequestBody Cylinder cylinder) {
         Logger logger=Logger.getLogger(this.getClass().getName());
         
         int i=1;
@@ -50,7 +49,7 @@ public class AppController {
 			
             
 		} catch (Exception e) {
-            e.printStackTrace();
+            
 			
             return new ResponseEntity <>(null,HttpStatus.BAD_REQUEST);
 		}

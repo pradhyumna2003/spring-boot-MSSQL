@@ -66,8 +66,8 @@ POST:<ServerIP>:8090/cylinder/api
 }
 ```
 
-# For help 
+# For help and queries.
 
-Contact mail: [Pradhyumna S](mailto:pradhyumna.dev@gmail.com)
+Contact mail: [Pradhyumna S(pradhyumna.dev@gmail.com)](mailto:pradhyumna.dev@gmail.com)
 
 

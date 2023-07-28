@@ -39,7 +39,7 @@ To run the image in docker.
 docker run -p <container_port>:8090 <image_name>
 
 ```
-# API Input
+# API Input and HTTP request method.
 
 ```URL
 POST:<ServerIP>:8090/cylinder/api
